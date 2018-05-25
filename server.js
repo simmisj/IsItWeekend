@@ -13,10 +13,10 @@ app.use(function (req, res/*, next*/) {
 });
 
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+//const wss = new WebSocket.Server({ server });
 
 // Broadcast to all.
-wss.broadcast = function broadcast(data) {
+/*wss.broadcast = function broadcast(data) {
   wss.clients.forEach(function each(client) {
     if (client.readyState === WebSocket.OPEN) {
       try {
@@ -27,9 +27,9 @@ wss.broadcast = function broadcast(data) {
       }
     }
   });
-};
+};*/
 
-var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
+/*var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
 iotHubReader.startReadMessage(function (obj, date) {
   try {
     console.log(date);
@@ -39,7 +39,7 @@ iotHubReader.startReadMessage(function (obj, date) {
     console.log(obj);
     console.error(err);
   }
-});
+});*/
 
 var port = normalizePort(process.env.PORT || '3000');
 server.listen(port, function listening() {

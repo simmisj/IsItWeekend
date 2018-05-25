@@ -66,7 +66,7 @@ $(document).ready(function () {
     options: basicOption
   });
 
-  var ws = new WebSocket('wss://' + location.host);
+  /*var ws = new WebSocket('wss://' + location.host);
   ws.onopen = function () {
     console.log('Successfully connect WebSocket');
   }
@@ -98,5 +98,5 @@ $(document).ready(function () {
     } catch (err) {
       console.error(err);
     }
-  }
+  }*/
 });
