@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var answer = document.getElementById("answer");
     answer.innerHTML = "haha2";
-    var date = Date.now;
+    var date = new Date;
     var element = document.getElementById("answer");
     if((date.getDay() == 5 && date.getHours() > 16) || date.getDay() == 6 || date.getDay() == 0){
         element.innerHTML = "yes";
