@@ -9,7 +9,7 @@ $(document).ready(function () {
     }else{
         element.innerHTML = "no";
     }
-    
+    /*
     var timeData = [],
     previousWeekendsChartData = [];
     
@@ -60,12 +60,14 @@ $(document).ready(function () {
     var dayNumber = date.getDay();
     var hourNumber = date.getHours();
     for(i = dayNumber; i < 14+dayNumber; i++){
-        if(dayNumber == 6 || (dayNumber == 5 && hourNumber > 15) || dayNumber == 0){
+        var modDay = i % 7;
+        if(modDay == 6 || modDay == 5  || modDay == 0){
             previousWeekendsChartData.push(1);
         }else{
             previousWeekendsChartData.push(0);
         }
+        //timeData.push();
     }
     myLineChart.update();
-
+*/
 });
