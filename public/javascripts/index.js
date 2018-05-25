@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var answer = document.getElementById("answer");
+    answer.innerHTML = "haha2";
   var timeData = [],
     temperatureData = [],
     humidityData = [];
