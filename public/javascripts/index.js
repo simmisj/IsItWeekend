@@ -59,7 +59,7 @@ $(document).ready(function () {
   });
     var dayNumber = date.getDay();
     var hourNumber = date.getHours();
-    for(int i = dayNumber; i < 14+dayNumber; i++){
+    for(i = dayNumber; i < 14+dayNumber; i++){
         if(dayNumber == 6 || (dayNumber == 5 && hourNumber > 15) || dayNumber == 0){
             previousWeekendsChartData.push(1);
         }else{
