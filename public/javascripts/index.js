@@ -6,8 +6,10 @@ $(document).ready(function () {
     var element = document.getElementById("answer");
     if((date.getDay() == 5 && date.getHours() >= 15) || date.getDay() == 6 || date.getDay() == 0){
         element.innerHTML = "yes";
+        element.style.color = "green";
     }else{
         element.innerHTML = "no";
+        element.style.color = "red";
     }
     /*
     var timeData = [],
